@@ -496,3 +496,15 @@ function capital_meta_title($title)
 }
 
 add_filter('wpseo_title', 'capital_meta_title');
+
+jQuery(document).ready(function($) {
+  var header = $('.sticky-header');
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      header.addClass('scrolled');
+    } else {
+      header.removeClass('scrolled');
+    }
+  });
+});
