@@ -1,16 +1,11 @@
 <?php
-global $post, $have_bg;
-
-//echo get_the_title($post->post_parent);
-
 $body_height = null;
 $haveBg = array('industry', 'expert', 'resource');
 
-if (in_array(get_post_type(), $haveBg)):
+if (in_array(get_post_type(), $haveBg)) {
     $the_bar = (!is_user_logged_in()) ? '' : '-bar';
     $body_height = 'bodyTop' . $the_bar;
-    $have_bg = 'have-bg';
-endif;
+}
 
 ?>
 
@@ -36,6 +31,36 @@ endif;
 
 <body <?php body_class($body_height);?>>
 
-<?php get_template_part('template-parts/navigation/navigation', 'top');?>
-
-<div>
+<header class="sticky-header">
+  <div class="container">
+    <div class="header-logo">
+      <a href="#"><img src="equiteq-logo.png" alt="Equiteq Logo"></a>
+    </div>
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="#">Services</a>
+          <ul class="sub-menu">
+            <li><a href="#">Buy Advisory</a></li>
+            <li><a href="#">Sell Advisory</a></li>
+            <li><a href="#">Corporate Divestitures</a></li>
+            <li><a href="#">Strategic Deal Origination</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Sectors</a>
+          <ul class="sub-menu">
+            <li><a href="#">Technology Services & Outsourcing Software</a></li>
+            <li><a href="#">Management Consulting</a></li>
+            <li><a href="#">Engineering Consulting & Services</a></li>
+            <li><a href="#">Human Capital Management</a></li>
+            <li><a href="#">Marketing, Communication & Information Services</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
