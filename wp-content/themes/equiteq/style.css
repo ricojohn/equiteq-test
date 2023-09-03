@@ -1208,3 +1208,46 @@ li {
     background-color: #7450fe;
     color: #fff;
 }
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 9999;
+}
+
+.sticky-header.scrolled {
+  background-color: #000116;
+}
+
+.main-navigation ul li a {
+  color: #000116;
+  font-family: 'VerbRegular', helvetica, arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.main-navigation ul li a:hover {
+  color: #9EEB47;
+}
+
+/* Additional CSS for sub-menus */
+.main-navigation ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-navigation ul li:hover > ul {
+  display: block;
+}
+
+.main-navigation ul ul li {
+  width: 100%;
+  float: none;
+}
