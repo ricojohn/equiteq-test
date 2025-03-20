@@ -56,8 +56,7 @@ $page = get_post($id);
                 <div class="col-md-2 mb-4">
                     <!-- Search by Title -->
                      <div class="filters-right">
-                            <input type="text" name="search_title" placeholder="Search by Name" value="<?php echo isset($_GET['search_title']) ? esc_attr($_GET['search_title']) : ''; ?>">
-                            <button type="submit"><i class="bi bi-search"></i></button>
+                            <input type="text" name="search_title" placeholder="Search by Name" value="<?php echo isset($_GET['search_title']) ? esc_attr($_GET['search_title']) : ''; ?>" onchange="this.form.submit()">
                      </div>
                 </div>
             </div>
