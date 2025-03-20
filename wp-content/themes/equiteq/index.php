@@ -3,7 +3,11 @@ get_header();
 
 $id = get_the_ID();
 $page = get_post($id);
+
+/**Hero */
+hm_get_template_part('template-parts/hero', ['page' => $page]);
 ?>
+
 
 <section class="bg bg-white <?=strtolower($page->post_title)?>">
     <div class="container no-pad-gutters">

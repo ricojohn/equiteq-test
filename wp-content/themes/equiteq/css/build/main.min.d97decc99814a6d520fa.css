@@ -291,19 +291,19 @@ footer {
       height: 30px;
       transition: all .1s; }
       footer .socials ul li a.youtube {
-        background: url("/wp-content/themes/equiteq/images/icon_youtube.png") no-repeat; }
+        background: url("http://localhost/wordpress/wp-content/themes/equiteq/images/icon_youtube.png") no-repeat; }
         footer .socials ul li a.youtube:hover {
           background-position: 0px -30px; }
       footer .socials ul li a.twitter {
-        background: url("/wp-content/themes/equiteq/images/icon_twitter.png") no-repeat; }
+        background: url("http://localhost/wordpress/wp-content/themes/equiteq/images/icon_twitter.png") no-repeat; }
         footer .socials ul li a.twitter:hover {
           background-position: 0px -30px; }
       footer .socials ul li a.slideshare {
-        background: url("/wp-content/themes/equiteq/images/icon_slideshare.png") no-repeat; }
+        background: url("http://localhost/wordpress/wp-content/themes/equiteq/images/icon_slideshare.png") no-repeat; }
         footer .socials ul li a.slideshare:hover {
           background-position: 0px -30px; }
       footer .socials ul li a.linkedin {
-        background: url("/wp-content/themes/equiteq/images/icon_linkedin.png") no-repeat; }
+        background: url("http://localhost/wordpress/wp-content/themes/equiteq/images/icon_linkedin.png") no-repeat; }
         footer .socials ul li a.linkedin:hover {
           background-position: 0px -30px; }
   footer .socials li:first-child {
